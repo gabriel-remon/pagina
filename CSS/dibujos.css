@@ -6,10 +6,10 @@
 }
 
 .fila{
-   background: rgb(149, 185, 155);
+   background: white;
 }
 .cabecera{
-    background: rgb(107, 236, 150);
+    background: red;
    
 }
 th ,td{

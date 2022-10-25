@@ -12,20 +12,20 @@ export const validarNumero = (e) =>{
 };
 
 const setError = (input, mensaje) => {
-    /*
+    
   const $small = input.nextElementSibling;
   $small.textContent = mensaje || `${input.name} requerido`;
   $small.classList.add("danger");
-*/
+
 input.classList.remove("inputOk");
 input.classList.add("inputError");
 };
 const clearError = (input) => {
-    /*
+    
   const $small = input.nextElementSibling;
   $small.textContent = "";
   $small.classList.remove("danger");
-*/
+
   input.classList.remove("inputError");
   input.classList.add("inputOk");
 };

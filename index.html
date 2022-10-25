@@ -8,37 +8,34 @@
   <link rel="stylesheet" href="./CSS/style.css">
   <link rel="stylesheet" href="./CSS/dibujos.css">
   <link rel="stylesheet" href="./CSS/validaciones.css">
-  <title>Pisteando</title>
+  <link rel="stylesheet" href="./CSS/vehiculo.css">
+  <title>Autos</title>
 </head>
 
 <body>
   <header>
     <a href="#">
-      <img id="logo" src="./imagenes/logo.jpg" alt="logo de la empresa">
+      <img id="logo" src="./imagenes/logo.png" alt="logo de la empresa">
     </a>
     <nav>
       <a href="#">Nosotros</a>
-      <a href="#">anuncios</a>
+      <a href="./principal.html">anuncios</a>
       <a href="#">blog</a>
       <a href="#">contactos</a>
     </nav>
-
   </header>
-
   <main>
+    <p>Administracion</p>
+    <img id="autos" src="./imagenes/autos2.jpg" alt="">
     <div class="contenedor">
-      <p>administracion</p>
-    </div>
 
-    <img id="autos" src="./imagenes/autos.jpg" alt="foto de autos">
-
-    <div class="contenedor">
       <form>
         <fieldset>
           <legend>informacion del anuncio</legend>
 
           <label for="titulo">TITULO:</label>
           <input id="titulo" type="text" name="titulo" placeholder="Titulo">
+          <span></span>
 
           <label>TRANSACCION:</label>
           <div class="contenedor">
@@ -46,39 +43,42 @@
             <input id="venta" type="radio" name="transaccion" value="venta" checked>
             <label for="alquiler">ALQUILER:</label>
             <input id="alquiler" type="radio" name="transaccion" value="alquiler">
-
           </div>
 
           <label for="descripccion">DESCRIPCCION:</label>
-          <input id="descripccion" name="descripccion" type="text">
+          <input id="descripccion" name="descripccion" type="text" placeholder="Descripccion">
+          <span></span>
 
           <label for="precio">PRECIO:</label>
-          <input id="precio" name="precio" type="text">
+          <input id="precio" name="precio" type="text" placeholder="Precio">
+          <span></span>
 
           <div class="especificaciones">
             <label for="puertas">
               <img src="./imagenes/puerta.jpg" alt="dibujo de puerta">
             </label>
-            <input id="puertas" name="puertas" type="text">
+            <input id="puertas" name="puertas" type="text" placeholder="cantidad de puertas">
+            <span></span>
 
             <label for="kms">
               <img src="./imagenes/velocimetro.jpg" alt="dibujo de velocimetro">
             </label>
-            <input id="kms" name="kms" type="text">
+            <input id="kms" name="kms" type="text" placeholder="kilometraje">
+            <span></span>
 
             <label for="potencia">
               <img src="./imagenes/motor.jpg" alt="dibujo de motor">
             </label>
-            <input id="potencia" name="potencia" type="text">
+            <input id="potencia" name="potencia" type="text" placeholder="potencia del motor">
+            <span></span>
           </div>
-
         </fieldset>
         <button class="contenedor"> <img src="./imagenes/guardar.png" alt=""> Guardar</button>
       </form>
     </div>
 
     <article id="tabla" class="contenedor">
-
+      <strong id="sin-anuncios">No se encontraron anuncios</strong>
     </article>
   </main>
 
@@ -91,6 +91,7 @@
     </nav>
     <p>Todos los derechos reservados 2019</p>
   </footer>
+
   <script src="./JS/app.js" type="module"></script>
 </body>
 

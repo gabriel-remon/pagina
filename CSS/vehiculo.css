@@ -1,0 +1,24 @@
+.especificaciones{
+    display: block;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.boton-vehiculo{
+    border: none;
+    background-color: orange;
+    color: white;
+    min-width: 200px;
+    min-height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+}
+.articulo-vehiculo{
+    background-color: rgb(117, 115, 115);
+    border: 0.5px solid black;
+    margin: 10px;
+}
+img{
+    width: 30p;
+    height: 30px;
+}

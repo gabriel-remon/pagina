@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+}
+body{
+    background-color: bisque;
+}
+header{
+    background: url(../imagenes/autos2.jpg);
+    width: 100%;
+    height: 400px;
+}
+.encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+header img{
+    width: 60px;
+    height: 60px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.descripcion{
+ position: relative;
+ bottom: -200px;   
+ font-size: 40px;
+ font-weight: bold
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
