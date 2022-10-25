@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/dibujos.css">
+  <link rel="stylesheet" href="./CSS/validaciones.css">
+  <title>Pisteando</title>
+</head>
+
+<body>
+  <header>
+    <a href="#">
+      <img id="logo" src="./imagenes/logo.jpg" alt="logo de la empresa">
+    </a>
+    <nav>
+      <a href="#">Nosotros</a>
+      <a href="#">anuncios</a>
+      <a href="#">blog</a>
+      <a href="#">contactos</a>
+    </nav>
+
+  </header>
+
+  <main>
+    <div class="contenedor">
+      <p>administracion</p>
+    </div>
+
+    <img id="autos" src="./imagenes/autos.jpg" alt="foto de autos">
+
+    <div class="contenedor">
+      <form>
+        <fieldset>
+          <legend>informacion del anuncio</legend>
+
+          <label for="titulo">TITULO:</label>
+          <input id="titulo" type="text" name="titulo" placeholder="Titulo">
+
+          <label>TRANSACCION:</label>
+          <div class="contenedor">
+            <label for="venta">VENTA:</label>
+            <input id="venta" type="radio" name="transaccion" value="venta" checked>
+            <label for="alquiler">ALQUILER:</label>
+            <input id="alquiler" type="radio" name="transaccion" value="alquiler">
+
+          </div>
+
+          <label for="descripccion">DESCRIPCCION:</label>
+          <input id="descripccion" name="descripccion" type="text">
+
+          <label for="precio">PRECIO:</label>
+          <input id="precio" name="precio" type="text">
+
+          <div class="especificaciones">
+            <label for="puertas">
+              <img src="./imagenes/puerta.jpg" alt="dibujo de puerta">
+            </label>
+            <input id="puertas" name="puertas" type="text">
+
+            <label for="kms">
+              <img src="./imagenes/velocimetro.jpg" alt="dibujo de velocimetro">
+            </label>
+            <input id="kms" name="kms" type="text">
+
+            <label for="potencia">
+              <img src="./imagenes/motor.jpg" alt="dibujo de motor">
+            </label>
+            <input id="potencia" name="potencia" type="text">
+          </div>
+
+        </fieldset>
+        <button class="contenedor"> <img src="./imagenes/guardar.png" alt=""> Guardar</button>
+      </form>
+    </div>
+
+    <article id="tabla" class="contenedor">
+
+    </article>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="#">Nosotros</a>
+      <a href="#">anuncios</a>
+      <a href="#">blog</a>
+      <a href="#">contactos</a>
+    </nav>
+    <p>Todos los derechos reservados 2019</p>
+  </footer>
+  <script src="./JS/app.js" type="module"></script>
+</body>
+
+</html>
